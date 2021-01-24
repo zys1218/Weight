@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Weight</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_label">登录</string>
+    <string name="login_station_input">请输入场站信息</string>
+    <string name="login_name_input">请输入姓名</string>
+    <string name="live_rubbish_label">生活垃圾分类界面</string>
+    <string name="kitchen_rubbish_label">厨余垃圾黑水虻就地处理站界面</string>
+    <string name="sijiqing_center_label">四季青有机资源再生中心</string>
+    <string name="facility_runtime_label">设备运行时间表</string>
+    <string name="save_label">保存</string>
+    <string name="selectLabel">选择</string>
+    <string name="comment_label">备注</string>
+    <string name="craft_record">工艺现场记录表</string>
+</resources>

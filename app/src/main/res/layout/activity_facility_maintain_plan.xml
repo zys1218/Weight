@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".householdWaste.FacilityMaintainPlanActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/facility_maintain_plan_guideline83"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/facility_maintain_plan_guideline84"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/facility_maintain_plan_guideline85"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/facility_maintain_plan_guideline86"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设备保养计划及记录表"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/facility_maintain_plan_guideline83"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/facility_maintain_plan_guideline83" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/facility_maintain_plan_guideline87"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/facility_maintain_plan_guideline88"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/facility_maintain_plan_guideline89"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <Spinner
+        android:id="@+id/facility_maintain_plan_facility_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/facility_maintain_plan_guideline87"
+        app:layout_constraintEnd_toStartOf="@+id/facility_maintain_plan_guideline86"
+        app:layout_constraintStart_toStartOf="@+id/facility_maintain_plan_guideline85"
+        app:layout_constraintTop_toTopOf="@+id/facility_maintain_plan_guideline87" />
+
+    <Spinner
+        android:id="@+id/facility_maintain_plan_maintain_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/facility_maintain_plan_guideline88"
+        app:layout_constraintEnd_toStartOf="@+id/facility_maintain_plan_guideline86"
+        app:layout_constraintStart_toStartOf="@+id/facility_maintain_plan_guideline85"
+        app:layout_constraintTop_toTopOf="@+id/facility_maintain_plan_guideline88" />
+
+    <EditText
+        android:id="@+id/facility_maintain_plan_maintain_method"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="请输入保养方法"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/facility_maintain_plan_guideline89"
+        app:layout_constraintEnd_toStartOf="@+id/facility_maintain_plan_guideline86"
+        app:layout_constraintStart_toStartOf="@+id/facility_maintain_plan_guideline85"
+        app:layout_constraintTop_toTopOf="@+id/facility_maintain_plan_guideline89" />
+
+    <Button
+        android:id="@+id/facility_maintain_plan_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/save_label"
+        app:layout_constraintBottom_toTopOf="@+id/facility_maintain_plan_guideline84"
+        app:layout_constraintEnd_toStartOf="@+id/facility_maintain_plan_guideline86"
+        app:layout_constraintStart_toStartOf="@+id/facility_maintain_plan_guideline85"
+        app:layout_constraintTop_toTopOf="@+id/facility_maintain_plan_guideline84" />
+</androidx.constraintlayout.widget.ConstraintLayout>

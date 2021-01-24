@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.weight">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".navigation.SijiqingWeightNavActivity"></activity>
+        <activity android:name=".navigation.SijiqingWaterDealNavActivity" />
+        <activity android:name=".navigation.SijiqingSolidLiquidSepNavActivity" />
+        <activity android:name=".navigation.SijiqingResearchDevelopmentNavActivity" />
+        <activity android:name=".navigation.SijiqingFlocculationNavActivity" />
+        <activity android:name=".navigation.SijiqingCompostNavActivity" />
+        <activity android:name=".navigation.SijiqingCenterNavActivity" />
+        <activity android:name=".navigation.MainNavigationActivity" />
+        <activity android:name=".navigation.KitchenRubbishNavActivity" />
+        <activity android:name=".navigation.HouseholdWasteNavActivity" />
+        <activity android:name=".householdWaste.YijingStationResourceActivity" />
+        <activity android:name=".householdWaste.WaterRecordActivity" />
+        <activity android:name=".householdWaste.StoppageClearActivity" />
+        <activity android:name=".householdWaste.FaultRepairActivity" />
+        <activity android:name=".householdWaste.FacilityRuntimeActivity" />
+        <activity android:name=".householdWaste.FacilityMaintainPlanActivity" />
+        <activity android:name=".householdWaste.ElectricRecordActivity" />
+        <activity android:name=".householdWaste.DeodorantSprayTimeActivity" />
+        <activity android:name=".householdWaste.CombustiblePutrescibleActivity" />
+        <activity android:name=".householdWaste.ChangeWaterActivity" />
+        <activity android:name=".householdWaste.BottleClassifierPutrescibleActivity" />
+        <activity android:name=".householdWaste.AbnormalRubbishActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

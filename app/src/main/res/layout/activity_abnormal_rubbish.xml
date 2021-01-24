@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".householdWaste.AbnormalRubbishActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/abnormal_rubbish_guideline23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.49" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/abnormal_rubbish_guideline24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/abnormal_rubbish_guideline25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/abnormal_rubbish_guideline26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.61" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/abnormal_rubbish_guideline27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/abnormal_rubbish_guideline28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.73" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/abnormal_rubbish_guideline29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="异常垃圾情况登记表"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/abnormal_rubbish_guideline29"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/abnormal_rubbish_guideline29" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/abnormal_rubbish_guideline30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/abnormal_rubbish_guideline31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <EditText
+        android:id="@+id/abnormal_rubbish_carNum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="请输入车号"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/abnormal_rubbish_guideline24"
+        app:layout_constraintEnd_toStartOf="@+id/abnormal_rubbish_guideline30"
+        app:layout_constraintStart_toStartOf="@+id/abnormal_rubbish_guideline31"
+        app:layout_constraintTop_toTopOf="@+id/abnormal_rubbish_guideline24" />
+
+    <EditText
+        android:id="@+id/abnormal_rubbish_rubbish_src"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="请输入垃圾来源"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/abnormal_rubbish_guideline25"
+        app:layout_constraintEnd_toStartOf="@+id/abnormal_rubbish_guideline30"
+        app:layout_constraintStart_toStartOf="@+id/abnormal_rubbish_guideline31"
+        app:layout_constraintTop_toTopOf="@+id/abnormal_rubbish_guideline25" />
+
+    <EditText
+        android:id="@+id/abnormal_rubbish_rubbish_kind"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="请输入垃圾种类"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/abnormal_rubbish_guideline23"
+        app:layout_constraintEnd_toStartOf="@+id/abnormal_rubbish_guideline30"
+        app:layout_constraintStart_toStartOf="@+id/abnormal_rubbish_guideline31"
+        app:layout_constraintTop_toTopOf="@+id/abnormal_rubbish_guideline23" />
+
+    <EditText
+        android:id="@+id/abnormal_rubbish_weight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="请输入数量"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/abnormal_rubbish_guideline26"
+        app:layout_constraintEnd_toStartOf="@+id/abnormal_rubbish_guideline30"
+        app:layout_constraintStart_toStartOf="@+id/abnormal_rubbish_guideline31"
+        app:layout_constraintTop_toTopOf="@+id/abnormal_rubbish_guideline26" />
+
+    <EditText
+        android:id="@+id/abnormal_rubbish_comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/comment_label"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/abnormal_rubbish_guideline28"
+        app:layout_constraintEnd_toStartOf="@+id/abnormal_rubbish_guideline30"
+        app:layout_constraintStart_toStartOf="@+id/abnormal_rubbish_guideline31"
+        app:layout_constraintTop_toTopOf="@+id/abnormal_rubbish_guideline28" />
+
+    <Button
+        android:id="@+id/abnormal_rubbish_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/save_label"
+        app:layout_constraintBottom_toTopOf="@+id/abnormal_rubbish_guideline27"
+        app:layout_constraintEnd_toStartOf="@+id/abnormal_rubbish_guideline30"
+        app:layout_constraintStart_toStartOf="@+id/abnormal_rubbish_guideline31"
+        app:layout_constraintTop_toTopOf="@+id/abnormal_rubbish_guideline27" />
+</androidx.constraintlayout.widget.ConstraintLayout>

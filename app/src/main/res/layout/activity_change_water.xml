@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".householdWaste.ChangeWaterActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/change_water_guideline37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/change_water_guideline38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/change_water_guideline39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/change_water_guideline40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="除臭塔换水记录"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/change_water_guideline37"
+        app:layout_constraintEnd_toStartOf="@+id/change_water_guideline40"
+        app:layout_constraintStart_toStartOf="@+id/change_water_guideline39"
+        app:layout_constraintTop_toTopOf="@+id/change_water_guideline37" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/change_water_guideline41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/change_water_guideline42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/change_water_guideline44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/change_water_guideline45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/change_water_guideline46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/change_water_guideline47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/change_water_guideline48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <EditText
+        android:id="@+id/change_water_pull_water_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="请输入放水时间"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/change_water_guideline41"
+        app:layout_constraintStart_toStartOf="@+id/change_water_guideline39"
+        app:layout_constraintTop_toTopOf="@+id/change_water_guideline41" />
+
+    <Button
+        android:id="@+id/change_water_pull_time_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selectLabel"
+        app:layout_constraintBottom_toTopOf="@+id/change_water_guideline41"
+        app:layout_constraintEnd_toStartOf="@+id/change_water_guideline40"
+        app:layout_constraintTop_toTopOf="@+id/change_water_guideline41" />
+
+    <EditText
+        android:id="@+id/change_water_push_water_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="请输入加水时间"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/change_water_guideline42"
+        app:layout_constraintStart_toStartOf="@+id/change_water_guideline39"
+        app:layout_constraintTop_toTopOf="@+id/change_water_guideline42" />
+
+    <Button
+        android:id="@+id/change_water_push_time_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selectLabel"
+        app:layout_constraintBottom_toTopOf="@+id/change_water_guideline42"
+        app:layout_constraintEnd_toStartOf="@+id/change_water_guideline40"
+        app:layout_constraintTop_toTopOf="@+id/change_water_guideline42" />
+
+    <EditText
+        android:id="@+id/change_water_clean_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="请输入清理填料时间"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/change_water_guideline44"
+        app:layout_constraintStart_toStartOf="@+id/change_water_guideline39"
+        app:layout_constraintTop_toTopOf="@+id/change_water_guideline44" />
+
+    <Button
+        android:id="@+id/change_water_clean_time_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selectLabel"
+        app:layout_constraintBottom_toTopOf="@+id/change_water_guideline44"
+        app:layout_constraintEnd_toStartOf="@+id/change_water_guideline40"
+        app:layout_constraintTop_toTopOf="@+id/change_water_guideline44" />
+
+    <EditText
+        android:id="@+id/change_water_deodorant"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="请输入添加除臭剂量"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/change_water_guideline45"
+        app:layout_constraintEnd_toStartOf="@+id/change_water_guideline40"
+        app:layout_constraintStart_toStartOf="@+id/change_water_guideline39"
+        app:layout_constraintTop_toTopOf="@+id/change_water_guideline45" />
+
+    <EditText
+        android:id="@+id/change_water_freshener"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="请输入添加清新剂量"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/change_water_guideline46"
+        app:layout_constraintEnd_toStartOf="@+id/change_water_guideline40"
+        app:layout_constraintStart_toStartOf="@+id/change_water_guideline39"
+        app:layout_constraintTop_toTopOf="@+id/change_water_guideline46" />
+
+    <EditText
+        android:id="@+id/change_water_sprayer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="请输入清理喷头个数"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/change_water_guideline47"
+        app:layout_constraintEnd_toStartOf="@+id/change_water_guideline40"
+        app:layout_constraintStart_toStartOf="@+id/change_water_guideline39"
+        app:layout_constraintTop_toTopOf="@+id/change_water_guideline47" />
+
+    <EditText
+        android:id="@+id/change_water_comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/comment_label"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/change_water_guideline48"
+        app:layout_constraintEnd_toStartOf="@+id/change_water_guideline40"
+        app:layout_constraintStart_toStartOf="@+id/change_water_guideline39"
+        app:layout_constraintTop_toTopOf="@+id/change_water_guideline48" />
+
+    <Button
+        android:id="@+id/change_water_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/save_label"
+        app:layout_constraintBottom_toTopOf="@+id/change_water_guideline38"
+        app:layout_constraintEnd_toStartOf="@+id/change_water_guideline40"
+        app:layout_constraintStart_toStartOf="@+id/change_water_guideline39"
+        app:layout_constraintTop_toTopOf="@+id/change_water_guideline38" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigation.HouseholdWasteNavActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/household_waste_nav_guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.923" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/household_waste_nav_guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.69220245" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/household_waste_nav_guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.538" />
+
+    <Button
+        android:id="@+id/facility_runtime_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="设备运行时间表"
+        app:layout_constraintBottom_toTopOf="@+id/household_waste_nav_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/household_waste_nav_guideline14"
+        app:layout_constraintStart_toStartOf="@+id/household_waste_nav_guideline13"
+        app:layout_constraintTop_toTopOf="@+id/household_waste_nav_guideline" />
+
+    <Button
+        android:id="@+id/stoppage_clear_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="堵塞清掏记录表"
+        app:layout_constraintBottom_toTopOf="@+id/household_waste_nav_guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/household_waste_nav_guideline14"
+        app:layout_constraintStart_toStartOf="@+id/household_waste_nav_guideline13"
+        app:layout_constraintTop_toTopOf="@+id/household_waste_nav_guideline2" />
+
+    <Button
+        android:id="@+id/abnormal_rubbish_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="异常垃圾登记表"
+        app:layout_constraintBottom_toTopOf="@+id/household_waste_nav_guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/household_waste_nav_guideline14"
+        app:layout_constraintStart_toStartOf="@+id/household_waste_nav_guideline13"
+        app:layout_constraintTop_toTopOf="@+id/household_waste_nav_guideline3" />
+
+    <Button
+        android:id="@+id/deodorant_spray_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="除臭剂喷洒时间表"
+        app:layout_constraintBottom_toTopOf="@+id/household_waste_nav_guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/household_waste_nav_guideline14"
+        app:layout_constraintStart_toStartOf="@+id/household_waste_nav_guideline13"
+        app:layout_constraintTop_toTopOf="@+id/household_waste_nav_guideline4" />
+
+    <Button
+        android:id="@+id/change_water_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="除臭塔换水记录表"
+        app:layout_constraintBottom_toTopOf="@+id/household_waste_nav_guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/household_waste_nav_guideline14"
+        app:layout_constraintStart_toStartOf="@+id/household_waste_nav_guideline13"
+        app:layout_constraintTop_toTopOf="@+id/household_waste_nav_guideline5" />
+
+    <Button
+        android:id="@+id/bottle_classifier_putrescible_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="瓶分机可腐物分拣数据统计表"
+        app:layout_constraintBottom_toTopOf="@+id/household_waste_nav_guideline6"
+        app:layout_constraintEnd_toStartOf="@+id/household_waste_nav_guideline14"
+        app:layout_constraintStart_toStartOf="@+id/household_waste_nav_guideline13"
+        app:layout_constraintTop_toTopOf="@+id/household_waste_nav_guideline6" />
+
+    <Button
+        android:id="@+id/combustible_putrescible_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="可燃物储料箱、可腐物储料箱清运记录表"
+        app:layout_constraintBottom_toTopOf="@+id/household_waste_nav_guideline8"
+        app:layout_constraintEnd_toStartOf="@+id/household_waste_nav_guideline14"
+        app:layout_constraintStart_toStartOf="@+id/household_waste_nav_guideline13"
+        app:layout_constraintTop_toTopOf="@+id/household_waste_nav_guideline8" />
+
+    <Button
+        android:id="@+id/yijing_station_resource_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="易净场站出售废品登记表空表"
+        app:layout_constraintBottom_toTopOf="@+id/household_waste_nav_guideline7"
+        app:layout_constraintEnd_toStartOf="@+id/household_waste_nav_guideline14"
+        app:layout_constraintStart_toStartOf="@+id/household_waste_nav_guideline13"
+        app:layout_constraintTop_toTopOf="@+id/household_waste_nav_guideline7" />
+
+    <Button
+        android:id="@+id/facility_maintain_plan_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="设备保养计划及记录表"
+        app:layout_constraintBottom_toTopOf="@+id/household_waste_nav_guideline9"
+        app:layout_constraintEnd_toStartOf="@+id/household_waste_nav_guideline14"
+        app:layout_constraintStart_toStartOf="@+id/household_waste_nav_guideline13"
+        app:layout_constraintTop_toTopOf="@+id/household_waste_nav_guideline9" />
+
+    <Button
+        android:id="@+id/fault_repair_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="故障维修原始记录表"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toStartOf="@+id/household_waste_nav_guideline14"
+        app:layout_constraintStart_toStartOf="@+id/household_waste_nav_guideline13"
+        app:layout_constraintTop_toTopOf="@+id/guideline10" />
+
+    <Button
+        android:id="@+id/water_record_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="水记录表"
+        app:layout_constraintBottom_toTopOf="@+id/household_waste_nav_guideline11"
+        app:layout_constraintEnd_toStartOf="@+id/household_waste_nav_guideline14"
+        app:layout_constraintStart_toStartOf="@+id/household_waste_nav_guideline13"
+        app:layout_constraintTop_toTopOf="@+id/household_waste_nav_guideline11" />
+
+    <Button
+        android:id="@+id/electric_record_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="电记录表"
+        app:layout_constraintBottom_toTopOf="@+id/household_waste_nav_guideline12"
+        app:layout_constraintEnd_toStartOf="@+id/household_waste_nav_guideline14"
+        app:layout_constraintStart_toStartOf="@+id/household_waste_nav_guideline13"
+        app:layout_constraintTop_toTopOf="@+id/household_waste_nav_guideline12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/household_waste_nav_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0769" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/household_waste_nav_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.153" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/household_waste_nav_guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.231" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/household_waste_nav_guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.308" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/household_waste_nav_guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.385" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/household_waste_nav_guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4610123" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/household_waste_nav_guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.615" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.769" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/household_waste_nav_guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.84678525" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/household_waste_nav_guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/household_waste_nav_guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

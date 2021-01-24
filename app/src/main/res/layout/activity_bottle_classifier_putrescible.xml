@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".householdWaste.BottleClassifierPutrescibleFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottle_classifier_putrescible_guideline43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottle_classifier_putrescible_guideline49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.36" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottle_classifier_putrescible_guideline50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.62" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottle_classifier_putrescible_guideline51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottle_classifier_putrescible_guideline52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottle_classifier_putrescible_guideline53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="瓶分机可腐物分拣数据统计表"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottle_classifier_putrescible_guideline43"
+        app:layout_constraintEnd_toStartOf="@+id/bottle_classifier_putrescible_guideline53"
+        app:layout_constraintStart_toStartOf="@+id/bottle_classifier_putrescible_guideline52"
+        app:layout_constraintTop_toTopOf="@+id/bottle_classifier_putrescible_guideline43" />
+
+    <EditText
+        android:id="@+id/bottle_classifier_putrescible_weight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="请输入可腐物重量"
+        app:layout_constraintBottom_toTopOf="@+id/bottle_classifier_putrescible_guideline49"
+        app:layout_constraintEnd_toStartOf="@+id/bottle_classifier_putrescible_guideline53"
+        app:layout_constraintStart_toStartOf="@+id/bottle_classifier_putrescible_guideline52"
+        app:layout_constraintTop_toTopOf="@+id/bottle_classifier_putrescible_guideline49" />
+
+    <EditText
+        android:id="@+id/bottle_classifier_putrescible_comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/comment_label"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/bottle_classifier_putrescible_guideline50"
+        app:layout_constraintEnd_toStartOf="@+id/bottle_classifier_putrescible_guideline53"
+        app:layout_constraintStart_toStartOf="@+id/bottle_classifier_putrescible_guideline52"
+        app:layout_constraintTop_toTopOf="@+id/bottle_classifier_putrescible_guideline50" />
+
+    <Button
+        android:id="@+id/bottle_classifier_putrescible_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/save_label"
+        app:layout_constraintBottom_toTopOf="@+id/bottle_classifier_putrescible_guideline51"
+        app:layout_constraintEnd_toStartOf="@+id/bottle_classifier_putrescible_guideline53"
+        app:layout_constraintStart_toStartOf="@+id/bottle_classifier_putrescible_guideline52"
+        app:layout_constraintTop_toTopOf="@+id/bottle_classifier_putrescible_guideline51" />
+</androidx.constraintlayout.widget.ConstraintLayout>

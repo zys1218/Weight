@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigation.SijiqingCenterNavActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sijiqing_center_nav_guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.666" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sijiqing_center_nav_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.11" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sijiqing_center_nav_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.22" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sijiqing_center_nav_guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sijiqing_center_nav_guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.44" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sijiqing_center_nav_guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.555" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sijiqing_center_nav_guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.777" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sijiqing_center_nav_guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sijiqing_center_nav_guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <Button
+        android:id="@+id/sijiqing_weight_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="称重岗位"
+        app:layout_constraintBottom_toTopOf="@+id/sijiqing_center_nav_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/sijiqing_center_nav_guideline9"
+        app:layout_constraintStart_toStartOf="@+id/sijiqing_center_nav_guideline8"
+        app:layout_constraintTop_toTopOf="@+id/sijiqing_center_nav_guideline" />
+
+    <Button
+        android:id="@+id/sijiqing_solid_liquid_sep_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="固液分离岗位"
+        app:layout_constraintBottom_toTopOf="@+id/sijiqing_center_nav_guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/sijiqing_center_nav_guideline9"
+        app:layout_constraintStart_toStartOf="@+id/sijiqing_center_nav_guideline8"
+        app:layout_constraintTop_toTopOf="@+id/sijiqing_center_nav_guideline2" />
+
+    <Button
+        android:id="@+id/sijiqing_flocculation_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="絮凝岗位"
+        app:layout_constraintBottom_toTopOf="@+id/sijiqing_center_nav_guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/sijiqing_center_nav_guideline9"
+        app:layout_constraintStart_toStartOf="@+id/sijiqing_center_nav_guideline8"
+        app:layout_constraintTop_toTopOf="@+id/sijiqing_center_nav_guideline3" />
+
+    <Button
+        android:id="@+id/sijiqing_compost_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="堆肥岗位"
+        app:layout_constraintBottom_toTopOf="@+id/sijiqing_center_nav_guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/sijiqing_center_nav_guideline9"
+        app:layout_constraintStart_toStartOf="@+id/sijiqing_center_nav_guideline8"
+        app:layout_constraintTop_toTopOf="@+id/sijiqing_center_nav_guideline4" />
+
+    <Button
+        android:id="@+id/sijiqing_water_deal_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="水处理岗位"
+        app:layout_constraintBottom_toTopOf="@+id/sijiqing_center_nav_guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/sijiqing_center_nav_guideline9"
+        app:layout_constraintStart_toStartOf="@+id/sijiqing_center_nav_guideline8"
+        app:layout_constraintTop_toTopOf="@+id/sijiqing_center_nav_guideline5" />
+
+    <Button
+        android:id="@+id/sijiqing_deodorization_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="除臭岗位"
+        app:layout_constraintBottom_toTopOf="@+id/sijiqing_center_nav_guideline6"
+        app:layout_constraintEnd_toStartOf="@+id/sijiqing_center_nav_guideline9"
+        app:layout_constraintStart_toStartOf="@+id/sijiqing_center_nav_guideline8"
+        app:layout_constraintTop_toTopOf="@+id/sijiqing_center_nav_guideline6" />
+
+    <Button
+        android:id="@+id/sijiqing_research_development_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="研发岗位"
+        app:layout_constraintBottom_toTopOf="@+id/sijiqing_center_nav_guideline7"
+        app:layout_constraintEnd_toStartOf="@+id/sijiqing_center_nav_guideline9"
+        app:layout_constraintStart_toStartOf="@+id/sijiqing_center_nav_guideline8"
+        app:layout_constraintTop_toTopOf="@+id/sijiqing_center_nav_guideline7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sijiqing_center_nav_guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.888" />
+
+    <Button
+        android:id="@+id/sijiqing_system_maintain_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="技术系统维护岗位"
+        app:layout_constraintBottom_toTopOf="@+id/sijiqing_center_nav_guideline10"
+        app:layout_constraintEnd_toStartOf="@+id/sijiqing_center_nav_guideline9"
+        app:layout_constraintStart_toStartOf="@+id/sijiqing_center_nav_guideline8"
+        app:layout_constraintTop_toTopOf="@+id/sijiqing_center_nav_guideline10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

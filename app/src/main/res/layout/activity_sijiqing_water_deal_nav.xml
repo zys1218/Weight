@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigation.SijiqingWaterDealNavActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sijiqing_water_deal_guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sijiqing_water_deal_guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sijiqing_water_deal_guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sijiqing_water_deal_guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sijiqing_water_deal_guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sijiqing_water_deal_guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sijiqing_water_deal_guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sijiqing_water_deal_guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sijiqing_water_deal_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sijiqing_water_deal_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sijiqing_water_deal_guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.09975669" />
+
+    <Button
+        android:id="@+id/sijiqing_water_deal_facility_run_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="设备运行记录表"
+        app:layout_constraintBottom_toTopOf="@+id/sijiqing_water_deal_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/sijiqing_water_deal_guideline13"
+        app:layout_constraintStart_toStartOf="@+id/sijiqing_water_deal_guideline12"
+        app:layout_constraintTop_toTopOf="@+id/sijiqing_water_deal_guideline" />
+
+    <Button
+        android:id="@+id/sijiqing_water_deal_backwash_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="膜反洗记录表"
+        app:layout_constraintBottom_toTopOf="@+id/sijiqing_water_deal_guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/sijiqing_water_deal_guideline13"
+        app:layout_constraintStart_toStartOf="@+id/sijiqing_water_deal_guideline12"
+        app:layout_constraintTop_toTopOf="@+id/sijiqing_water_deal_guideline2" />
+
+    <Button
+        android:id="@+id/sijiqing_water_deal_send_water_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="送水记录表"
+        app:layout_constraintBottom_toTopOf="@+id/sijiqing_water_deal_guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/sijiqing_water_deal_guideline13"
+        app:layout_constraintStart_toStartOf="@+id/sijiqing_water_deal_guideline12"
+        app:layout_constraintTop_toTopOf="@+id/sijiqing_water_deal_guideline4" />
+
+    <Button
+        android:id="@+id/sijiqing_water_deal_electricity_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="用电记录表"
+        app:layout_constraintBottom_toTopOf="@+id/sijiqing_water_deal_guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/sijiqing_water_deal_guideline13"
+        app:layout_constraintStart_toStartOf="@+id/sijiqing_water_deal_guideline12"
+        app:layout_constraintTop_toTopOf="@+id/sijiqing_water_deal_guideline5" />
+
+    <Button
+        android:id="@+id/sijiqing_water_deal_facility_check_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="设备检查记录表"
+        app:layout_constraintBottom_toTopOf="@+id/sijiqing_water_deal_guideline6"
+        app:layout_constraintEnd_toStartOf="@+id/sijiqing_water_deal_guideline13"
+        app:layout_constraintStart_toStartOf="@+id/sijiqing_water_deal_guideline12"
+        app:layout_constraintTop_toTopOf="@+id/sijiqing_water_deal_guideline6" />
+
+    <Button
+        android:id="@+id/sijiqing_water_deal_facility_day_maintain_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="设备日保养记录表"
+        app:layout_constraintBottom_toTopOf="@+id/sijiqing_water_deal_guideline7"
+        app:layout_constraintEnd_toStartOf="@+id/sijiqing_water_deal_guideline13"
+        app:layout_constraintStart_toStartOf="@+id/sijiqing_water_deal_guideline12"
+        app:layout_constraintTop_toTopOf="@+id/sijiqing_water_deal_guideline7" />
+
+    <Button
+        android:id="@+id/sijiqing_water_deal_facility_month_maintain_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="设备月保养记录表"
+        app:layout_constraintBottom_toTopOf="@+id/sijiqing_water_deal_guideline8"
+        app:layout_constraintEnd_toStartOf="@+id/sijiqing_water_deal_guideline13"
+        app:layout_constraintStart_toStartOf="@+id/sijiqing_water_deal_guideline12"
+        app:layout_constraintTop_toTopOf="@+id/sijiqing_water_deal_guideline8" />
+
+    <Button
+        android:id="@+id/sijiqing_water_deal_fault_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="故障记录表"
+        app:layout_constraintBottom_toTopOf="@+id/sijiqing_water_deal_guideline9"
+        app:layout_constraintEnd_toStartOf="@+id/sijiqing_water_deal_guideline13"
+        app:layout_constraintStart_toStartOf="@+id/sijiqing_water_deal_guideline12"
+        app:layout_constraintTop_toTopOf="@+id/sijiqing_water_deal_guideline9" />
+
+    <Button
+        android:id="@+id/sijiqing_water_deal_craft_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="工艺现场记录表"
+        app:layout_constraintBottom_toTopOf="@+id/sijiqing_water_deal_guideline11"
+        app:layout_constraintEnd_toStartOf="@+id/sijiqing_water_deal_guideline13"
+        app:layout_constraintStart_toStartOf="@+id/sijiqing_water_deal_guideline12"
+        app:layout_constraintTop_toTopOf="@+id/sijiqing_water_deal_guideline11" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

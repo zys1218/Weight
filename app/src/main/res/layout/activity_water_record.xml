@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".householdWaste.WaterRecordActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/water_record_guideline102"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/water_record_guideline103"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/water_record_guideline104"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10948905" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/water_record_guideline105"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="水表记录"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/water_record_guideline102"
+        app:layout_constraintEnd_toStartOf="@+id/water_record_guideline105"
+        app:layout_constraintStart_toStartOf="@+id/water_record_guideline104"
+        app:layout_constraintTop_toTopOf="@+id/water_record_guideline102" />
+
+    <Button
+        android:id="@+id/water_record_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/save_label"
+        app:layout_constraintBottom_toTopOf="@+id/water_record_guideline103"
+        app:layout_constraintEnd_toStartOf="@+id/water_record_guideline105"
+        app:layout_constraintStart_toStartOf="@+id/water_record_guideline104"
+        app:layout_constraintTop_toTopOf="@+id/water_record_guideline103" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/water_record_guideline106"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/water_record_guideline107"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/water_record_guideline108"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <EditText
+        android:id="@+id/water_record_meter_read_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="请输入抄表时间"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/water_record_guideline106"
+        app:layout_constraintStart_toStartOf="@+id/water_record_guideline104"
+        app:layout_constraintTop_toTopOf="@+id/water_record_guideline106" />
+
+    <Button
+        android:id="@+id/water_record_meter_read_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selectLabel"
+        app:layout_constraintBottom_toTopOf="@+id/water_record_guideline106"
+        app:layout_constraintEnd_toStartOf="@+id/water_record_guideline105"
+        app:layout_constraintTop_toTopOf="@+id/water_record_guideline106" />
+
+    <EditText
+        android:id="@+id/water_record_meter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="请输入表读数"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/water_record_guideline107"
+        app:layout_constraintEnd_toStartOf="@+id/water_record_guideline105"
+        app:layout_constraintStart_toStartOf="@+id/water_record_guideline104"
+        app:layout_constraintTop_toTopOf="@+id/water_record_guideline107" />
+
+    <EditText
+        android:id="@+id/water_record_comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/comment_label"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/water_record_guideline108"
+        app:layout_constraintEnd_toStartOf="@+id/water_record_guideline105"
+        app:layout_constraintStart_toStartOf="@+id/water_record_guideline104"
+        app:layout_constraintTop_toTopOf="@+id/water_record_guideline108" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

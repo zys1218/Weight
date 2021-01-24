@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".householdWaste.FacilityRuntimeActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/facility_runtime_guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/facility_runtime_label"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/facility_runtime_guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/facility_runtime_guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/facility_runtime_off_text"
+        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/facility_runtime_guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/facility_runtime_guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <Button
+        android:id="@+id/facility_runtime_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/save_label"
+        app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline12"
+        app:layout_constraintEnd_toStartOf="@+id/facility_runtime_guideline13"
+        app:layout_constraintStart_toStartOf="@+id/facility_runtime_guideline21"
+        app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline12" />
+
+    <EditText
+        android:id="@+id/facility_runtime_on_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="请输入开机时间"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline9"
+        app:layout_constraintStart_toStartOf="@+id/facility_runtime_guideline21"
+        app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline9" />
+
+    <EditText
+        android:id="@+id/facility_runtime_off_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="请输入关机时间"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline10"
+        app:layout_constraintStart_toStartOf="@+id/facility_runtime_guideline21"
+        app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline10" />
+
+    <Button
+        android:id="@+id/facility_runtime_on_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selectLabel"
+        app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline9"
+        app:layout_constraintEnd_toStartOf="@+id/facility_runtime_guideline13"
+        app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline9" />
+
+    <Button
+        android:id="@+id/facility_runtime_off_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selectLabel"
+        app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline10"
+        app:layout_constraintEnd_toStartOf="@+id/facility_runtime_guideline13"
+        app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/facility_runtime_guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <EditText
+        android:id="@+id/facility_runtime_off_reason_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="关机原因"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline11"
+        app:layout_constraintEnd_toStartOf="@+id/facility_runtime_guideline13"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@+id/facility_runtime_guideline21"
+        app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline11" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/facility_runtime_guideline21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
