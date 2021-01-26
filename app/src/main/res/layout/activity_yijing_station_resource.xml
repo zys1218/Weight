@@ -101,14 +101,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="塑料" />
+                android:text="塑料"
+                android:textSize="24sp" />
 
             <RadioButton
                 android:id="@+id/yijing_plustic_bag"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="塑料袋" />
+                android:text="塑料袋"
+                android:textSize="24sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -123,14 +125,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="饭盒" />
+                android:text="饭盒"
+                android:textSize="24sp" />
 
             <RadioButton
                 android:id="@+id/yijing_paper"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="纸" />
+                android:text="纸"
+                android:textSize="24sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -145,14 +149,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="铁铝盒" />
+                android:text="铁铝盒"
+                android:textSize="24sp" />
 
             <RadioButton
                 android:id="@+id/yijing_glass_bottle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="玻璃瓶" />
+                android:text="玻璃瓶"
+                android:textSize="24sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -166,7 +172,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="饮料瓶" />
+                android:text="饮料瓶"
+                android:textSize="24sp" />
 
         </LinearLayout>
     </RadioGroup>
@@ -176,10 +183,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="数量（公斤）"
         app:layout_constraintBottom_toTopOf="@+id/yijing_guideline71"
         app:layout_constraintEnd_toStartOf="@+id/yijing_guideline73"
-        app:layout_constraintStart_toStartOf="@+id/yijing_guideline72"
+        app:layout_constraintStart_toEndOf="@+id/textView50"
         app:layout_constraintTop_toTopOf="@+id/yijing_guideline71" />
 
     <Button
@@ -187,9 +193,20 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/save_label"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/yijing_guideline66"
         app:layout_constraintEnd_toStartOf="@+id/yijing_guideline73"
         app:layout_constraintStart_toStartOf="@+id/yijing_guideline72"
         app:layout_constraintTop_toTopOf="@+id/yijing_guideline66" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数量（公斤）"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/yijing_guideline71"
+        app:layout_constraintStart_toStartOf="@+id/yijing_guideline72"
+        app:layout_constraintTop_toTopOf="@+id/yijing_guideline71" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

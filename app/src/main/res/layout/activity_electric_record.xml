@@ -6,6 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".householdWaste.ElectricRecordActivity">
 
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comment_label"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/electric_record_guideline101"
+        app:layout_constraintStart_toStartOf="@+id/electric_record_guideline96"
+        app:layout_constraintTop_toTopOf="@+id/electric_record_guideline101" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="照明电表读数"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/electric_record_guideline100"
+        app:layout_constraintStart_toStartOf="@+id/electric_record_guideline96"
+        app:layout_constraintTop_toTopOf="@+id/electric_record_guideline100" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="动力电表读数"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/electric_record_guideline99"
+        app:layout_constraintStart_toStartOf="@+id/electric_record_guideline96"
+        app:layout_constraintTop_toTopOf="@+id/electric_record_guideline99" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/electric_record_guideline94"
         android:layout_width="wrap_content"
@@ -49,6 +79,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/save_label"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/electric_record_guideline95"
         app:layout_constraintEnd_toStartOf="@+id/electric_record_guideline97"
         app:layout_constraintStart_toStartOf="@+id/electric_record_guideline96"
@@ -84,13 +115,13 @@
 
     <EditText
         android:id="@+id/electric_record_meter_read_time"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="请输入抄表时间"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/electric_record_guideline98"
-        app:layout_constraintStart_toStartOf="@+id/electric_record_guideline96"
+        app:layout_constraintEnd_toStartOf="@+id/electric_record_meter_read_btn"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
         app:layout_constraintTop_toTopOf="@+id/electric_record_guideline98" />
 
     <Button
@@ -98,6 +129,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/selectLabel"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/electric_record_guideline98"
         app:layout_constraintEnd_toStartOf="@+id/electric_record_guideline97"
         app:layout_constraintTop_toTopOf="@+id/electric_record_guideline98" />
@@ -107,11 +139,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="请输入动力电表读数"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/electric_record_guideline99"
         app:layout_constraintEnd_toStartOf="@+id/electric_record_guideline97"
-        app:layout_constraintStart_toStartOf="@+id/electric_record_guideline96"
+        app:layout_constraintStart_toEndOf="@+id/textView24"
         app:layout_constraintTop_toTopOf="@+id/electric_record_guideline99" />
 
     <EditText
@@ -119,11 +150,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="请输入照明电表读数"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/electric_record_guideline100"
         app:layout_constraintEnd_toStartOf="@+id/electric_record_guideline97"
-        app:layout_constraintStart_toStartOf="@+id/electric_record_guideline96"
+        app:layout_constraintStart_toEndOf="@+id/textView26"
         app:layout_constraintTop_toTopOf="@+id/electric_record_guideline100" />
 
     <EditText
@@ -131,11 +161,20 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/comment_label"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/electric_record_guideline101"
         app:layout_constraintEnd_toStartOf="@+id/electric_record_guideline97"
-        app:layout_constraintStart_toStartOf="@+id/electric_record_guideline96"
+        app:layout_constraintStart_toEndOf="@+id/textView27"
         app:layout_constraintTop_toTopOf="@+id/electric_record_guideline101" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="抄表时间"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/electric_record_guideline98"
+        app:layout_constraintStart_toStartOf="@+id/electric_record_guideline96"
+        app:layout_constraintTop_toTopOf="@+id/electric_record_guideline98" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

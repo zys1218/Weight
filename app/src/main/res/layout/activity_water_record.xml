@@ -6,6 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".householdWaste.WaterRecordActivity">
 
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comment_label"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/water_record_guideline108"
+        app:layout_constraintStart_toStartOf="@+id/water_record_guideline104"
+        app:layout_constraintTop_toTopOf="@+id/water_record_guideline108" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="表读数"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/water_record_guideline107"
+        app:layout_constraintStart_toStartOf="@+id/water_record_guideline104"
+        app:layout_constraintTop_toTopOf="@+id/water_record_guideline107" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="抄表时间"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/water_record_guideline106"
+        app:layout_constraintStart_toStartOf="@+id/water_record_guideline104"
+        app:layout_constraintTop_toTopOf="@+id/water_record_guideline106" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/water_record_guideline102"
         android:layout_width="wrap_content"
@@ -49,6 +79,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/save_label"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/water_record_guideline103"
         app:layout_constraintEnd_toStartOf="@+id/water_record_guideline105"
         app:layout_constraintStart_toStartOf="@+id/water_record_guideline104"
@@ -77,13 +108,13 @@
 
     <EditText
         android:id="@+id/water_record_meter_read_time"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="请输入抄表时间"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/water_record_guideline106"
-        app:layout_constraintStart_toStartOf="@+id/water_record_guideline104"
+        app:layout_constraintEnd_toStartOf="@+id/water_record_meter_read_btn"
+        app:layout_constraintStart_toEndOf="@+id/textView47"
         app:layout_constraintTop_toTopOf="@+id/water_record_guideline106" />
 
     <Button
@@ -91,6 +122,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/selectLabel"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/water_record_guideline106"
         app:layout_constraintEnd_toStartOf="@+id/water_record_guideline105"
         app:layout_constraintTop_toTopOf="@+id/water_record_guideline106" />
@@ -100,11 +132,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="请输入表读数"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/water_record_guideline107"
         app:layout_constraintEnd_toStartOf="@+id/water_record_guideline105"
-        app:layout_constraintStart_toStartOf="@+id/water_record_guideline104"
+        app:layout_constraintStart_toEndOf="@+id/textView48"
         app:layout_constraintTop_toTopOf="@+id/water_record_guideline107" />
 
     <EditText
@@ -112,11 +143,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/comment_label"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/water_record_guideline108"
         app:layout_constraintEnd_toStartOf="@+id/water_record_guideline105"
-        app:layout_constraintStart_toStartOf="@+id/water_record_guideline104"
+        app:layout_constraintStart_toEndOf="@+id/textView49"
         app:layout_constraintTop_toTopOf="@+id/water_record_guideline108" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,6 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".householdWaste.CombustiblePutrescibleActivity">
 
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comment_label"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/combustible_putrescible_guideline64"
+        app:layout_constraintStart_toStartOf="@+id/combustible_putrescible_guideline62"
+        app:layout_constraintTop_toTopOf="@+id/combustible_putrescible_guideline64" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="箱内剩料（kg）"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/combustible_putrescible_guideline60"
+        app:layout_constraintStart_toStartOf="@+id/combustible_putrescible_guideline62"
+        app:layout_constraintTop_toTopOf="@+id/combustible_putrescible_guideline60" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清运物料（kg）"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/combustible_putrescible_guideline59"
+        app:layout_constraintStart_toStartOf="@+id/combustible_putrescible_guideline62"
+        app:layout_constraintTop_toTopOf="@+id/combustible_putrescible_guideline59" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="来厂时间"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/combustible_putrescible_guideline56"
+        app:layout_constraintStart_toStartOf="@+id/combustible_putrescible_guideline62"
+        app:layout_constraintTop_toTopOf="@+id/combustible_putrescible_guideline56" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/combustible_putrescible_guideline54"
         android:layout_width="wrap_content"
@@ -80,7 +120,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="可燃物储料箱、可腐物储料箱清运记录表"
-        android:textSize="20sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/combustible_putrescible_guideline54"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,22 +131,21 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="请输入车号"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/combustible_putrescible_guideline55"
         app:layout_constraintEnd_toStartOf="@+id/combustible_putrescible_guideline63"
-        app:layout_constraintStart_toStartOf="@+id/combustible_putrescible_guideline62"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
         app:layout_constraintTop_toTopOf="@+id/combustible_putrescible_guideline55" />
 
     <EditText
         android:id="@+id/combustible_putrescible_come_time"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="请输入来厂时间"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/combustible_putrescible_guideline56"
-        app:layout_constraintStart_toStartOf="@+id/combustible_putrescible_guideline62"
+        app:layout_constraintEnd_toStartOf="@+id/combustible_putrescible_come_time_btn"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
         app:layout_constraintTop_toTopOf="@+id/combustible_putrescible_guideline56" />
 
     <Button
@@ -114,6 +153,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/selectLabel"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/combustible_putrescible_guideline56"
         app:layout_constraintEnd_toStartOf="@+id/combustible_putrescible_guideline63"
         app:layout_constraintTop_toTopOf="@+id/combustible_putrescible_guideline56" />
@@ -123,19 +163,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/selectLabel"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/combustible_putrescible_guideline57"
         app:layout_constraintEnd_toStartOf="@+id/combustible_putrescible_guideline63"
         app:layout_constraintTop_toTopOf="@+id/combustible_putrescible_guideline57" />
 
     <EditText
         android:id="@+id/combustible_putrescible_leave_time"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="请输入离厂时间"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/combustible_putrescible_guideline57"
-        app:layout_constraintStart_toStartOf="@+id/combustible_putrescible_guideline62"
+        app:layout_constraintEnd_toStartOf="@+id/combustible_putrescible_leave_time_btn"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
         app:layout_constraintTop_toTopOf="@+id/combustible_putrescible_guideline57" />
 
     <RadioGroup
@@ -152,14 +193,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="可燃物" />
+            android:text="可燃物"
+            android:textSize="24sp" />
 
         <RadioButton
             android:id="@+id/combustion_putrescible_pRadio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="可腐物" />
+            android:text="可腐物"
+            android:textSize="24sp" />
     </RadioGroup>
 
     <androidx.constraintlayout.widget.Guideline
@@ -174,11 +217,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="请输入清运物料（kg）"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/combustible_putrescible_guideline59"
         app:layout_constraintEnd_toStartOf="@+id/combustible_putrescible_guideline63"
-        app:layout_constraintStart_toStartOf="@+id/combustible_putrescible_guideline62"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
         app:layout_constraintTop_toTopOf="@+id/combustible_putrescible_guideline59" />
 
     <EditText
@@ -186,11 +228,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="请输入箱内剩料（kg）"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/combustible_putrescible_guideline60"
         app:layout_constraintEnd_toStartOf="@+id/combustible_putrescible_guideline63"
-        app:layout_constraintStart_toStartOf="@+id/combustible_putrescible_guideline62"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
         app:layout_constraintTop_toTopOf="@+id/combustible_putrescible_guideline60" />
 
     <EditText
@@ -198,11 +239,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/comment_label"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/combustible_putrescible_guideline64"
         app:layout_constraintEnd_toStartOf="@+id/combustible_putrescible_guideline63"
-        app:layout_constraintStart_toStartOf="@+id/combustible_putrescible_guideline62"
+        app:layout_constraintStart_toEndOf="@+id/textView21"
         app:layout_constraintTop_toTopOf="@+id/combustible_putrescible_guideline64" />
 
     <Button
@@ -210,9 +250,30 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/save_label"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/combustible_putrescible_guideline61"
         app:layout_constraintEnd_toStartOf="@+id/combustible_putrescible_guideline63"
         app:layout_constraintStart_toStartOf="@+id/combustible_putrescible_guideline62"
         app:layout_constraintTop_toTopOf="@+id/combustible_putrescible_guideline61" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="车号"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/combustible_putrescible_guideline55"
+        app:layout_constraintStart_toStartOf="@+id/combustible_putrescible_guideline62"
+        app:layout_constraintTop_toTopOf="@+id/combustible_putrescible_guideline55" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="离厂时间"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/combustible_putrescible_guideline57"
+        app:layout_constraintStart_toStartOf="@+id/combustible_putrescible_guideline62"
+        app:layout_constraintTop_toTopOf="@+id/combustible_putrescible_guideline57" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

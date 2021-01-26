@@ -6,6 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".householdWaste.BottleClassifierPutrescibleFragment">
 
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comment_label"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottle_classifier_putrescible_guideline50"
+        app:layout_constraintStart_toStartOf="@+id/bottle_classifier_putrescible_guideline52"
+        app:layout_constraintTop_toTopOf="@+id/bottle_classifier_putrescible_guideline50" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="可腐物重量"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottle_classifier_putrescible_guideline49"
+        app:layout_constraintStart_toStartOf="@+id/bottle_classifier_putrescible_guideline52"
+        app:layout_constraintTop_toTopOf="@+id/bottle_classifier_putrescible_guideline49" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/bottle_classifier_putrescible_guideline43"
         android:layout_width="wrap_content"
@@ -63,10 +83,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="请输入可腐物重量"
         app:layout_constraintBottom_toTopOf="@+id/bottle_classifier_putrescible_guideline49"
         app:layout_constraintEnd_toStartOf="@+id/bottle_classifier_putrescible_guideline53"
-        app:layout_constraintStart_toStartOf="@+id/bottle_classifier_putrescible_guideline52"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/bottle_classifier_putrescible_guideline49" />
 
     <EditText
@@ -74,11 +93,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/comment_label"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/bottle_classifier_putrescible_guideline50"
         app:layout_constraintEnd_toStartOf="@+id/bottle_classifier_putrescible_guideline53"
-        app:layout_constraintStart_toStartOf="@+id/bottle_classifier_putrescible_guideline52"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toTopOf="@+id/bottle_classifier_putrescible_guideline50" />
 
     <Button
@@ -86,6 +104,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/save_label"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/bottle_classifier_putrescible_guideline51"
         app:layout_constraintEnd_toStartOf="@+id/bottle_classifier_putrescible_guideline53"
         app:layout_constraintStart_toStartOf="@+id/bottle_classifier_putrescible_guideline52"

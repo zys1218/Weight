@@ -6,6 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".householdWaste.FacilityRuntimeActivity">
 
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关机原因"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline11"
+        app:layout_constraintStart_toStartOf="@+id/facility_runtime_guideline21"
+        app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline11" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关机时间"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline10"
+        app:layout_constraintStart_toStartOf="@+id/facility_runtime_guideline21"
+        app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline10" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开机时间"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline9"
+        app:layout_constraintStart_toStartOf="@+id/facility_runtime_guideline21"
+        app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline9" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/facility_runtime_guideline8"
         android:layout_width="wrap_content"
@@ -59,6 +89,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/save_label"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline12"
         app:layout_constraintEnd_toStartOf="@+id/facility_runtime_guideline13"
         app:layout_constraintStart_toStartOf="@+id/facility_runtime_guideline21"
@@ -66,24 +97,24 @@
 
     <EditText
         android:id="@+id/facility_runtime_on_text"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="请输入开机时间"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline9"
-        app:layout_constraintStart_toStartOf="@+id/facility_runtime_guideline21"
+        app:layout_constraintEnd_toStartOf="@+id/facility_runtime_on_btn"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
         app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline9" />
 
     <EditText
         android:id="@+id/facility_runtime_off_text"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="请输入关机时间"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline10"
-        app:layout_constraintStart_toStartOf="@+id/facility_runtime_guideline21"
+        app:layout_constraintEnd_toStartOf="@+id/facility_runtime_off_btn"
+        app:layout_constraintStart_toEndOf="@+id/textView28"
         app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline10" />
 
     <Button
@@ -91,6 +122,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/selectLabel"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline9"
         app:layout_constraintEnd_toStartOf="@+id/facility_runtime_guideline13"
         app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline9" />
@@ -100,6 +132,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/selectLabel"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline10"
         app:layout_constraintEnd_toStartOf="@+id/facility_runtime_guideline13"
         app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline10" />
@@ -111,23 +144,19 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.9" />
 
-    <EditText
-        android:id="@+id/facility_runtime_off_reason_text"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="关机原因"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline11"
-        app:layout_constraintEnd_toStartOf="@+id/facility_runtime_guideline13"
-        app:layout_constraintHorizontal_bias="0.50"
-        app:layout_constraintStart_toStartOf="@+id/facility_runtime_guideline21"
-        app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline11" />
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/facility_runtime_guideline21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.1" />
+
+    <Spinner
+        android:id="@+id/facility_runtime_off_reason"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline11"
+        app:layout_constraintEnd_toStartOf="@+id/facility_runtime_guideline13"
+        app:layout_constraintStart_toEndOf="@+id/textView29"
+        app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline11" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,6 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".householdWaste.StoppageClearActivity">
 
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comment_label"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/stoppage_clear_guideline19"
+        app:layout_constraintStart_toStartOf="@+id/stoppage_clear_guideline22"
+        app:layout_constraintTop_toTopOf="@+id/stoppage_clear_guideline19" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清掏人员"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/stoppage_clear_guideline18"
+        app:layout_constraintStart_toStartOf="@+id/stoppage_clear_guideline22"
+        app:layout_constraintTop_toTopOf="@+id/stoppage_clear_guideline18" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/stoppage_clear_guideline14"
         android:layout_width="wrap_content"
@@ -39,13 +59,13 @@
 
     <EditText
         android:id="@+id/stoppage_clear_time_text"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="请输入时间"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/stoppage_clear_guideline15"
-        app:layout_constraintStart_toStartOf="@+id/stoppage_clear_guideline22"
+        app:layout_constraintEnd_toStartOf="@+id/stoppage_clear_time_btn"
+        app:layout_constraintStart_toEndOf="@+id/textView43"
         app:layout_constraintTop_toTopOf="@+id/stoppage_clear_guideline15" />
 
     <Button
@@ -53,6 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/selectLabel"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/stoppage_clear_guideline15"
         app:layout_constraintEnd_toStartOf="@+id/stoppage_clear_guideline16"
         app:layout_constraintTop_toTopOf="@+id/stoppage_clear_guideline15" />
@@ -90,6 +111,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/save_label"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/stoppage_clear_guideline20"
         app:layout_constraintEnd_toStartOf="@+id/stoppage_clear_guideline16"
         app:layout_constraintStart_toStartOf="@+id/stoppage_clear_guideline22"
@@ -101,20 +123,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/stoppage_clear_guideline17"
         app:layout_constraintEnd_toStartOf="@+id/stoppage_clear_guideline16"
-        app:layout_constraintStart_toStartOf="@+id/stoppage_clear_guideline22"
+        app:layout_constraintStart_toEndOf="@+id/textView44"
         app:layout_constraintTop_toTopOf="@+id/stoppage_clear_guideline17" />
-
-    <EditText
-        android:id="@+id/stoppage_clear_staff"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="请输入清掏人员"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/stoppage_clear_guideline18"
-        app:layout_constraintEnd_toStartOf="@+id/stoppage_clear_guideline16"
-        app:layout_constraintStart_toStartOf="@+id/stoppage_clear_guideline22"
-        app:layout_constraintTop_toTopOf="@+id/stoppage_clear_guideline18" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/stoppage_clear_guideline22"
@@ -128,11 +138,39 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/comment_label"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/stoppage_clear_guideline19"
         app:layout_constraintEnd_toStartOf="@+id/stoppage_clear_guideline16"
-        app:layout_constraintStart_toStartOf="@+id/stoppage_clear_guideline22"
+        app:layout_constraintStart_toEndOf="@+id/textView46"
         app:layout_constraintTop_toTopOf="@+id/stoppage_clear_guideline19" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时间"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/stoppage_clear_guideline15"
+        app:layout_constraintStart_toStartOf="@+id/stoppage_clear_guideline22"
+        app:layout_constraintTop_toTopOf="@+id/stoppage_clear_guideline15" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="堵塞部位"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/stoppage_clear_guideline17"
+        app:layout_constraintStart_toStartOf="@+id/stoppage_clear_guideline22"
+        app:layout_constraintTop_toTopOf="@+id/stoppage_clear_guideline17" />
+
+    <Spinner
+        android:id="@+id/stoppage_clear_staff"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/stoppage_clear_guideline18"
+        app:layout_constraintEnd_toStartOf="@+id/stoppage_clear_guideline16"
+        app:layout_constraintStart_toEndOf="@+id/textView45"
+        app:layout_constraintTop_toTopOf="@+id/stoppage_clear_guideline18" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

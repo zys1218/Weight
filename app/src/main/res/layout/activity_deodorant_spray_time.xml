@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".householdWaste.DeodorantSprayTimeActivity">
 
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="喷洒时间"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/deodorant_spray_time_guideline33"
+        app:layout_constraintStart_toStartOf="@+id/deodorant_spray_time_guideline35"
+        app:layout_constraintTop_toTopOf="@+id/deodorant_spray_time_guideline33" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/deodorant_spray_time_guideline32"
         android:layout_width="wrap_content"
@@ -53,13 +63,13 @@
 
     <EditText
         android:id="@+id/deodorant_spray_time_spray_time"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="请输入喷洒时间"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/deodorant_spray_time_guideline33"
-        app:layout_constraintStart_toStartOf="@+id/deodorant_spray_time_guideline35"
+        app:layout_constraintEnd_toStartOf="@+id/deodorant_spray_time_time_btn"
+        app:layout_constraintStart_toEndOf="@+id/textView22"
         app:layout_constraintTop_toTopOf="@+id/deodorant_spray_time_guideline33" />
 
     <Button
@@ -67,6 +77,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/selectLabel"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/deodorant_spray_time_guideline33"
         app:layout_constraintEnd_toStartOf="@+id/deodorant_spray_time_guideline36"
         app:layout_constraintTop_toTopOf="@+id/deodorant_spray_time_guideline33" />
@@ -76,6 +87,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/save_label"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/deodorant_spray_time_guideline34"
         app:layout_constraintEnd_toStartOf="@+id/deodorant_spray_time_guideline36"
         app:layout_constraintStart_toStartOf="@+id/deodorant_spray_time_guideline35"
