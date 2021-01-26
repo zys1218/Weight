@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 //                Spinner nameSpinner = findViewById(R.id.login_name);
 //                String name = nameSpinner.get;
-                String name = "zys";
+                String name = "admin";
 //                if (TextUtils.isEmpty(name)) {
 //                    Toast.makeText(MainActivity.this, "请输入姓名", Toast.LENGTH_SHORT).show();
 //                    return;
