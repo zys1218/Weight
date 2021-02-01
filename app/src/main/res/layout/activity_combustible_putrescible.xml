@@ -219,7 +219,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/combustible_putrescible_guideline59"
-        app:layout_constraintEnd_toStartOf="@+id/combustible_putrescible_guideline63"
+        app:layout_constraintEnd_toStartOf="@+id/combustion_putrescible_transport_weight_btn"
         app:layout_constraintStart_toEndOf="@+id/textView19"
         app:layout_constraintTop_toTopOf="@+id/combustible_putrescible_guideline59" />
 
@@ -230,7 +230,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/combustible_putrescible_guideline60"
-        app:layout_constraintEnd_toStartOf="@+id/combustible_putrescible_guideline63"
+        app:layout_constraintEnd_toStartOf="@+id/combustible_putrescible_rest_weight_btn"
         app:layout_constraintStart_toEndOf="@+id/textView20"
         app:layout_constraintTop_toTopOf="@+id/combustible_putrescible_guideline60" />
 
@@ -275,5 +275,25 @@
         app:layout_constraintBottom_toTopOf="@+id/combustible_putrescible_guideline57"
         app:layout_constraintStart_toStartOf="@+id/combustible_putrescible_guideline62"
         app:layout_constraintTop_toTopOf="@+id/combustible_putrescible_guideline57" />
+
+    <Button
+        android:id="@+id/combustion_putrescible_transport_weight_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chengzhong"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/combustible_putrescible_guideline59"
+        app:layout_constraintEnd_toStartOf="@+id/combustible_putrescible_guideline63"
+        app:layout_constraintTop_toTopOf="@+id/combustible_putrescible_guideline59" />
+
+    <Button
+        android:id="@+id/combustible_putrescible_rest_weight_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chengzhong"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/combustible_putrescible_guideline60"
+        app:layout_constraintEnd_toStartOf="@+id/combustible_putrescible_guideline63"
+        app:layout_constraintTop_toTopOf="@+id/combustible_putrescible_guideline60" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

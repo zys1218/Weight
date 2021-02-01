@@ -161,7 +161,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/abnormal_rubbish_guideline26"
-        app:layout_constraintEnd_toStartOf="@+id/abnormal_rubbish_guideline30"
+        app:layout_constraintEnd_toStartOf="@+id/abnormal_rubbish_weight_btn"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="@+id/abnormal_rubbish_guideline26" />
 
@@ -196,4 +196,14 @@
         app:layout_constraintBottom_toTopOf="@+id/abnormal_rubbish_guideline24"
         app:layout_constraintStart_toStartOf="@+id/abnormal_rubbish_guideline31"
         app:layout_constraintTop_toTopOf="@+id/abnormal_rubbish_guideline24" />
+
+    <Button
+        android:id="@+id/abnormal_rubbish_weight_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chengzhong"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/abnormal_rubbish_guideline26"
+        app:layout_constraintEnd_toStartOf="@+id/abnormal_rubbish_guideline30"
+        app:layout_constraintTop_toTopOf="@+id/abnormal_rubbish_guideline26" />
 </androidx.constraintlayout.widget.ConstraintLayout>

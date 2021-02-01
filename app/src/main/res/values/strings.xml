@@ -14,4 +14,5 @@
     <string name="selectLabel">选择</string>
     <string name="comment_label">备注</string>
     <string name="craft_record">工艺现场记录表</string>
+    <string name="chengzhong">称重</string>
 </resources>

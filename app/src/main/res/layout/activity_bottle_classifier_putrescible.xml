@@ -84,7 +84,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         app:layout_constraintBottom_toTopOf="@+id/bottle_classifier_putrescible_guideline49"
-        app:layout_constraintEnd_toStartOf="@+id/bottle_classifier_putrescible_guideline53"
+        app:layout_constraintEnd_toStartOf="@+id/bottle_classifier_putrescible_weight_btn"
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/bottle_classifier_putrescible_guideline49" />
 
@@ -109,4 +109,14 @@
         app:layout_constraintEnd_toStartOf="@+id/bottle_classifier_putrescible_guideline53"
         app:layout_constraintStart_toStartOf="@+id/bottle_classifier_putrescible_guideline52"
         app:layout_constraintTop_toTopOf="@+id/bottle_classifier_putrescible_guideline51" />
+
+    <Button
+        android:id="@+id/bottle_classifier_putrescible_weight_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chengzhong"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottle_classifier_putrescible_guideline49"
+        app:layout_constraintEnd_toStartOf="@+id/bottle_classifier_putrescible_guideline53"
+        app:layout_constraintTop_toTopOf="@+id/bottle_classifier_putrescible_guideline49" />
 </androidx.constraintlayout.widget.ConstraintLayout>

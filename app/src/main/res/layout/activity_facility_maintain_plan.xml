@@ -3,185 +3,843 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".householdWaste.FacilityMaintainPlanActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView53"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="保养方法"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/facility_maintain_plan_guideline89"
-        app:layout_constraintStart_toStartOf="@+id/facility_maintain_plan_guideline85"
-        app:layout_constraintTop_toTopOf="@+id/facility_maintain_plan_guideline89" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/facility_maintain_plan_guideline83"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.1" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/facility_maintain_plan_guideline84"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.9" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/facility_maintain_plan_guideline85"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.1" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/facility_maintain_plan_guideline86"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.9" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="设备保养计划及记录表"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/facility_maintain_plan_guideline83"
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/facility_maintain_plan_guideline83" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/facility_maintain_plan_guideline87"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.233" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/facility_maintain_plan_guideline88"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.3666" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/facility_maintain_plan_guideline89"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="计划保养日期："
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="24sp" />
 
-    <Spinner
-        android:id="@+id/facility_maintain_plan_facility_name"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/facility_maintain_plan_guideline87"
-        app:layout_constraintEnd_toStartOf="@+id/facility_maintain_plan_guideline86"
-        app:layout_constraintStart_toEndOf="@+id/textView51"
-        app:layout_constraintTop_toTopOf="@+id/facility_maintain_plan_guideline87" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="周日"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="24sp" />
+            </LinearLayout>
 
-    <Spinner
-        android:id="@+id/facility_maintain_plan_maintain_content"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/facility_maintain_plan_guideline88"
-        app:layout_constraintEnd_toStartOf="@+id/facility_maintain_plan_guideline86"
-        app:layout_constraintStart_toEndOf="@+id/textView52"
-        app:layout_constraintTop_toTopOf="@+id/facility_maintain_plan_guideline88" />
 
-    <Button
-        android:id="@+id/facility_maintain_plan_save"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/save_label"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/facility_maintain_plan_guideline84"
-        app:layout_constraintEnd_toStartOf="@+id/facility_maintain_plan_guideline86"
-        app:layout_constraintStart_toStartOf="@+id/facility_maintain_plan_guideline85"
-        app:layout_constraintTop_toTopOf="@+id/facility_maintain_plan_guideline84" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
 
-    <TextView
-        android:id="@+id/textView51"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="设备名称"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/facility_maintain_plan_guideline87"
-        app:layout_constraintStart_toStartOf="@+id/facility_maintain_plan_guideline85"
-        app:layout_constraintTop_toTopOf="@+id/facility_maintain_plan_guideline87" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
 
-    <TextView
-        android:id="@+id/textView52"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="维护内容"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/facility_maintain_plan_guideline88"
-        app:layout_constraintStart_toStartOf="@+id/facility_maintain_plan_guideline85"
-        app:layout_constraintTop_toTopOf="@+id/facility_maintain_plan_guideline88" />
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="液压步进式给料机"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
 
-    <Spinner
-        android:id="@+id/facility_maintain_plan_maintain_method"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/facility_maintain_plan_guideline89"
-        app:layout_constraintEnd_toStartOf="@+id/facility_maintain_plan_guideline86"
-        app:layout_constraintStart_toEndOf="@+id/textView53"
-        app:layout_constraintTop_toTopOf="@+id/facility_maintain_plan_guideline89" />
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/facility_maintain_plan_guideline16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.6333" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/facility_maintain_plan_guideline17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.7666" />
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="进料螺旋(变频)"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/textView54"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="检查人"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/facility_maintain_plan_guideline16"
-        app:layout_constraintStart_toStartOf="@+id/facility_maintain_plan_guideline85"
-        app:layout_constraintTop_toTopOf="@+id/facility_maintain_plan_guideline16" />
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView55"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="检查结果"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/facility_maintain_plan_guideline17"
-        app:layout_constraintStart_toStartOf="@+id/facility_maintain_plan_guideline85"
-        app:layout_constraintTop_toTopOf="@+id/facility_maintain_plan_guideline17" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
 
-    <Spinner
-        android:id="@+id/facility_maintain_plan_check_person"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/facility_maintain_plan_guideline16"
-        app:layout_constraintEnd_toStartOf="@+id/facility_maintain_plan_guideline86"
-        app:layout_constraintStart_toEndOf="@+id/textView54"
-        app:layout_constraintTop_toTopOf="@+id/facility_maintain_plan_guideline16" />
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="提升螺旋"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
 
-    <Spinner
-        android:id="@+id/facility_maintain_plan_check_result"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/facility_maintain_plan_guideline17"
-        app:layout_constraintEnd_toStartOf="@+id/facility_maintain_plan_guideline86"
-        app:layout_constraintStart_toEndOf="@+id/textView55"
-        app:layout_constraintTop_toTopOf="@+id/facility_maintain_plan_guideline17" />
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="破袋机进料板链"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="破袋机进料板链"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="链条各连接部位加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="破袋机短料收集螺旋"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="破袋机出料板链"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="生活垃圾分离机短料螺旋"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="滚筒筛"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="滚筒筛筛上物输送螺旋"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="瓶类分离机进料螺旋"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="瓶类分离机"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="瓶类分离机"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="链条各连接部位加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="可腐物进料磁选皮带机"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="瓶类分拣板链"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="瓶类分拣板链"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="链条各连接部位加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="瓶类分离机出料螺旋"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="可燃物输送螺旋"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="生活垃圾分离机长料输送螺旋"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="链条各连接部位加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="筛下物输送螺旋-1"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="筛下物输送螺旋-2"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="可腐物粉碎机出料螺旋"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="可腐物粉碎机-1"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="可腐物粉碎机-2"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="可腐物粉碎机出料螺旋"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="风选粉碎机"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="塑料分离机进料板链"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="塑料分离机进料板链"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="链条各连接部位加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="可燃物储存箱进料称重皮带"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="可腐物储存箱进料称重皮带"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="磁选皮带机"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="固定轴承加油"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="监控系统"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/facility_maintain_cb32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="清理除尘"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="备注"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/facility_maintain_comment"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:minLines="5"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

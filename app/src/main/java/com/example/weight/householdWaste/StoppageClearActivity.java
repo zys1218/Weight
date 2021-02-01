@@ -21,6 +21,7 @@ public class StoppageClearActivity extends AppCompatActivity {
 
         List<String> stoppagePartList = new ArrayList<String>();
         stoppagePartList.add("请输入堵塞部位");
+        stoppagePartList.add("test");
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
                 R.layout.support_simple_spinner_dropdown_item, stoppagePartList);
 

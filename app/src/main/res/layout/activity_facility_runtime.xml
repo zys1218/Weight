@@ -16,26 +16,6 @@
         app:layout_constraintStart_toStartOf="@+id/facility_runtime_guideline21"
         app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline11" />
 
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="关机时间"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline10"
-        app:layout_constraintStart_toStartOf="@+id/facility_runtime_guideline21"
-        app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline10" />
-
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="开机时间"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline9"
-        app:layout_constraintStart_toStartOf="@+id/facility_runtime_guideline21"
-        app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline9" />
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/facility_runtime_guideline8"
         android:layout_width="wrap_content"
@@ -58,16 +38,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.3" />
+        app:layout_constraintGuide_percent="0.325" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/facility_runtime_guideline10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toStartOf="@+id/facility_runtime_off_text"
-        app:layout_constraintGuide_percent="0.5"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintGuide_percent="0.55"
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -75,66 +53,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.7" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/facility_runtime_guideline12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.9" />
-
-    <Button
-        android:id="@+id/facility_runtime_save"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/save_label"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline12"
-        app:layout_constraintEnd_toStartOf="@+id/facility_runtime_guideline13"
-        app:layout_constraintStart_toStartOf="@+id/facility_runtime_guideline21"
-        app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline12" />
-
-    <EditText
-        android:id="@+id/facility_runtime_on_text"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline9"
-        app:layout_constraintEnd_toStartOf="@+id/facility_runtime_on_btn"
-        app:layout_constraintStart_toEndOf="@+id/textView25"
-        app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline9" />
-
-    <EditText
-        android:id="@+id/facility_runtime_off_text"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline10"
-        app:layout_constraintEnd_toStartOf="@+id/facility_runtime_off_btn"
-        app:layout_constraintStart_toEndOf="@+id/textView28"
-        app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline10" />
+        app:layout_constraintGuide_percent="0.775" />
 
     <Button
         android:id="@+id/facility_runtime_on_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/selectLabel"
+        android:text="开机"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline9"
         app:layout_constraintEnd_toStartOf="@+id/facility_runtime_guideline13"
+        app:layout_constraintStart_toStartOf="@+id/facility_runtime_guideline21"
         app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline9" />
 
     <Button
         android:id="@+id/facility_runtime_off_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/selectLabel"
+        android:text="关机"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline10"
         app:layout_constraintEnd_toStartOf="@+id/facility_runtime_guideline13"
+        app:layout_constraintStart_toStartOf="@+id/facility_runtime_guideline21"
         app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline10" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -156,7 +96,17 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline11"
-        app:layout_constraintEnd_toStartOf="@+id/facility_runtime_guideline13"
+        app:layout_constraintEnd_toStartOf="@+id/facility_runtime_off_time_btn"
         app:layout_constraintStart_toEndOf="@+id/textView29"
+        app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline11" />
+
+    <Button
+        android:id="@+id/facility_runtime_off_time_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_label"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/facility_runtime_guideline11"
+        app:layout_constraintEnd_toStartOf="@+id/facility_runtime_guideline13"
         app:layout_constraintTop_toTopOf="@+id/facility_runtime_guideline11" />
 </androidx.constraintlayout.widget.ConstraintLayout>

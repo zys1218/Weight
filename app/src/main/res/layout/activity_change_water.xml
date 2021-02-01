@@ -20,7 +20,7 @@
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="添加清新剂量"
+        android:text="添加清新剂量（kg）"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/change_water_guideline46"
         app:layout_constraintStart_toStartOf="@+id/change_water_guideline39"
@@ -30,41 +30,11 @@
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="添加除臭剂量"
+        android:text="添加除臭剂量（kg）"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/change_water_guideline45"
         app:layout_constraintStart_toStartOf="@+id/change_water_guideline39"
         app:layout_constraintTop_toTopOf="@+id/change_water_guideline45" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="清理填料时间"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/change_water_guideline44"
-        app:layout_constraintStart_toStartOf="@+id/change_water_guideline39"
-        app:layout_constraintTop_toTopOf="@+id/change_water_guideline44" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="加水时间"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/change_water_guideline42"
-        app:layout_constraintStart_toStartOf="@+id/change_water_guideline39"
-        app:layout_constraintTop_toTopOf="@+id/change_water_guideline42" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="放水时间"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/change_water_guideline41"
-        app:layout_constraintStart_toStartOf="@+id/change_water_guideline39"
-        app:layout_constraintTop_toTopOf="@+id/change_water_guideline41" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/change_water_guideline37"
@@ -153,68 +123,37 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.8" />
 
-    <EditText
-        android:id="@+id/change_water_pull_water_time"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/change_water_guideline41"
-        app:layout_constraintEnd_toStartOf="@+id/change_water_pull_time_btn"
-        app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toTopOf="@+id/change_water_guideline41" />
-
     <Button
         android:id="@+id/change_water_pull_time_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/selectLabel"
+        android:text="开始放水"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/change_water_guideline41"
         app:layout_constraintEnd_toStartOf="@+id/change_water_guideline40"
+        app:layout_constraintStart_toStartOf="@+id/change_water_guideline39"
         app:layout_constraintTop_toTopOf="@+id/change_water_guideline41" />
-
-    <EditText
-        android:id="@+id/change_water_push_water_time"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/change_water_guideline42"
-        app:layout_constraintEnd_toStartOf="@+id/change_water_push_time_btn"
-        app:layout_constraintStart_toEndOf="@+id/textView10"
-        app:layout_constraintTop_toTopOf="@+id/change_water_guideline42"
-        app:layout_constraintVertical_bias="0.533" />
 
     <Button
         android:id="@+id/change_water_push_time_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/selectLabel"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:text="开始加水"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/change_water_guideline42"
         app:layout_constraintEnd_toStartOf="@+id/change_water_guideline40"
+        app:layout_constraintStart_toStartOf="@+id/change_water_guideline39"
         app:layout_constraintTop_toTopOf="@+id/change_water_guideline42" />
-
-    <EditText
-        android:id="@+id/change_water_clean_time"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/change_water_guideline44"
-        app:layout_constraintEnd_toStartOf="@+id/change_water_clean_time_btn"
-        app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toTopOf="@+id/change_water_guideline44" />
 
     <Button
         android:id="@+id/change_water_clean_time_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/selectLabel"
+        android:text="开始清理填料"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/change_water_guideline44"
         app:layout_constraintEnd_toStartOf="@+id/change_water_guideline40"
+        app:layout_constraintStart_toStartOf="@+id/change_water_guideline39"
         app:layout_constraintTop_toTopOf="@+id/change_water_guideline44" />
 
     <EditText

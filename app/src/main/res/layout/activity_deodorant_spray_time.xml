@@ -6,16 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".householdWaste.DeodorantSprayTimeActivity">
 
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="喷洒时间"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/deodorant_spray_time_guideline33"
-        app:layout_constraintStart_toStartOf="@+id/deodorant_spray_time_guideline35"
-        app:layout_constraintTop_toTopOf="@+id/deodorant_spray_time_guideline33" />
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/deodorant_spray_time_guideline32"
         android:layout_width="wrap_content"
@@ -61,35 +51,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/deodorant_spray_time_guideline32" />
 
-    <EditText
-        android:id="@+id/deodorant_spray_time_spray_time"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/deodorant_spray_time_guideline33"
-        app:layout_constraintEnd_toStartOf="@+id/deodorant_spray_time_time_btn"
-        app:layout_constraintStart_toEndOf="@+id/textView22"
-        app:layout_constraintTop_toTopOf="@+id/deodorant_spray_time_guideline33" />
-
     <Button
         android:id="@+id/deodorant_spray_time_time_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/selectLabel"
+        android:text="开始喷洒"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/deodorant_spray_time_guideline33"
         app:layout_constraintEnd_toStartOf="@+id/deodorant_spray_time_guideline36"
+        app:layout_constraintStart_toStartOf="@+id/deodorant_spray_time_guideline35"
         app:layout_constraintTop_toTopOf="@+id/deodorant_spray_time_guideline33" />
 
-    <Button
-        android:id="@+id/deodorant_spray_time_save"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/save_label"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/deodorant_spray_time_guideline34"
-        app:layout_constraintEnd_toStartOf="@+id/deodorant_spray_time_guideline36"
-        app:layout_constraintStart_toStartOf="@+id/deodorant_spray_time_guideline35"
-        app:layout_constraintTop_toTopOf="@+id/deodorant_spray_time_guideline34" />
 </androidx.constraintlayout.widget.ConstraintLayout>

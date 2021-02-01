@@ -86,53 +86,25 @@
         app:layout_constraintTop_toTopOf="@+id/electric_record_guideline95" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/electric_record_guideline98"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.26" />
-
-    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/electric_record_guideline99"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.42" />
+        app:layout_constraintGuide_percent="0.3" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/electric_record_guideline100"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.59" />
+        app:layout_constraintGuide_percent="0.5" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/electric_record_guideline101"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.72640216" />
-
-    <EditText
-        android:id="@+id/electric_record_meter_read_time"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/electric_record_guideline98"
-        app:layout_constraintEnd_toStartOf="@+id/electric_record_meter_read_btn"
-        app:layout_constraintStart_toEndOf="@+id/textView23"
-        app:layout_constraintTop_toTopOf="@+id/electric_record_guideline98" />
-
-    <Button
-        android:id="@+id/electric_record_meter_read_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/selectLabel"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/electric_record_guideline98"
-        app:layout_constraintEnd_toStartOf="@+id/electric_record_guideline97"
-        app:layout_constraintTop_toTopOf="@+id/electric_record_guideline98" />
+        app:layout_constraintGuide_percent="0.7" />
 
     <EditText
         android:id="@+id/electric_record_power_ammeter"
@@ -166,15 +138,5 @@
         app:layout_constraintEnd_toStartOf="@+id/electric_record_guideline97"
         app:layout_constraintStart_toEndOf="@+id/textView27"
         app:layout_constraintTop_toTopOf="@+id/electric_record_guideline101" />
-
-    <TextView
-        android:id="@+id/textView23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="抄表时间"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/electric_record_guideline98"
-        app:layout_constraintStart_toStartOf="@+id/electric_record_guideline96"
-        app:layout_constraintTop_toTopOf="@+id/electric_record_guideline98" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
