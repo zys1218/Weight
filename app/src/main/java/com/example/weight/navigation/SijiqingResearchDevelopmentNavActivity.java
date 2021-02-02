@@ -1,11 +1,11 @@
 package com.example.weight.navigation;
 
-import androidx.appcompat.app.AppCompatActivity;
-import com.example.weight.R;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.weight.R;
 
 public class SijiqingResearchDevelopmentNavActivity extends AppCompatActivity {
 

@@ -1,14 +1,14 @@
 package com.example.weight.householdWaste;
 
-import androidx.appcompat.app.AppCompatActivity;
-import com.example.weight.R;
-
 import android.app.TimePickerDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.TimePicker;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.weight.R;
 
 import java.util.Calendar;
 
@@ -36,9 +36,9 @@ public class CombustiblePutrescibleActivity extends AppCompatActivity {
                 comeTime.setText(HOUR + ":" + MINUTE);
             }
         }
-        ,HOUR
-        ,MINUTE
-        ,true).show();
+                ,HOUR
+                ,MINUTE
+                ,true).show();
     }
 
     public void selectLeaveTime(View view) {
@@ -52,8 +52,8 @@ public class CombustiblePutrescibleActivity extends AppCompatActivity {
                 leaveTime.setText(HOUR + ":" + MINUTE);
             }
         }
-        ,HOUR
-        ,MINUTE
-        ,true).show();
+                ,HOUR
+                ,MINUTE
+                ,true).show();
     }
 }

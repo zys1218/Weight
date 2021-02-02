@@ -1,5 +1,10 @@
 package com.example.weight.navigation;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.weight.R;
@@ -15,11 +20,6 @@ import com.example.weight.householdWaste.FaultRepairActivity;
 import com.example.weight.householdWaste.StoppageClearActivity;
 import com.example.weight.householdWaste.WaterRecordActivity;
 import com.example.weight.householdWaste.YijingStationResourceActivity;
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 
 public class HouseholdWasteNavActivity extends AppCompatActivity {
 

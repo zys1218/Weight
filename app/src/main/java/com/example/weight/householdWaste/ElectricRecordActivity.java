@@ -1,9 +1,10 @@
 package com.example.weight.householdWaste;
 
-import androidx.appcompat.app.AppCompatActivity;
-import com.example.weight.R;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.weight.R;
 
 public class ElectricRecordActivity extends AppCompatActivity {
 
